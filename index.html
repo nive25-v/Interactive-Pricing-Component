@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mcontainer container-fluid">
+      <div class="row">
+        <div class="title">
+          <h1>Simple, traffic-based pricing</h1>
+          <p class="text-muted mt-4">
+            Sign-up for our 30-day trial.<br />
+            No credit card required.
+          </p>
+        </div>
+      </div>
+        <div class="container col-11 col-md-6">
+          <p class="views mt-3"><span id="rSliderValue">100k</span> Pageviews</p>
+          <input type="range" min="1" max="5" step="1" id="sRange" class="slider my-3" value="3">
+          <p class="price mt-4"><span class="h2">$</span><span class="dollar h2">16.00</span> / month</p>
+          <div class="sToggle mt-4">
+          <span class="monthly">Monthly Billing</span>
+          <input type="checkbox" id="switch" /><label for="switch"></label>
+          <span class="yearly">Yearly Billing
+            <span class="offer px-2 pb-1 ml-1">-25%</span>
+          </span>
+        </div>
+          <hr class="w-100">
+          <div class="footer d-md-flex justify-content-md-around w-100 d-sm-block text-center">
+          <ul class="plus text-justify">
+            <li class="pros">Unlimited Websites</li>
+            <li class="pros">100% Data Ownership</li>
+            <li class="pros">Email Reports</;>
+          </ul>
+          <button class="btn px-4 py-2" type="button">Start my trial</button>
+          <!-- <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+            <span class="mr-5">Monthly billing</span>
+            <label class="custom-control-label mt-auto" for="customSwitch1">Yearly Billing</label>
+          </div> -->
+        </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
